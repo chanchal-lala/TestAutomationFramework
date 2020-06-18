@@ -1,0 +1,41 @@
+What is WebDriver Manager
+
+References
+https://github.com/bonigarcia/webdrivermanager
+https://mvnrepository.com/
+
+If you use Selenium WebDriver, you probably know that to use some browsers such as Chrome, Firefox, Opera, PhantomJS, Microsoft Edge, or Internet Explorer, first you need to download the so-called driver, i.e. a binary file which allows WebDriver to handle browsers. In Java, the path to this driver must be set as JVM properties, as follows:
+
+System.setProperty("webdriver.chrome.driver", "/path/to/binary/chromedriver");
+System.setProperty("webdriver.gecko.driver", "/path/to/binary/geckodriver");
+System.setProperty("webdriver.opera.driver", "/path/to/binary/operadriver");
+System.setProperty("phantomjs.binary.path", "/path/to/binary/phantomjs");
+System.setProperty("webdriver.edge.driver", "C:/path/to/binary/msedgedriver.exe");
+System.setProperty("webdriver.ie.driver", "C:/path/to/binary/IEDriverServer.exe");
+This is quite annoying since it forces you to link directly this binary file into your source code. In addition, you have to check manually when new versions of the binaries are released. WebDriverManager comes to the rescue, performing in an automated way all this dirty job for you. WebDriverManager can be used in 3 different ways:
+
+WebDriverManager as Java dependency (typically from test cases).
+
+To use WebDriverManager from tests in a Maven project, you need to add the following dependency in your pom.xml (Java 8 or upper required):
+
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>3.8.1</version>
+    <scope>test</scope>
+</dependency>
+... or in Gradle project:
+
+dependencies {
+    testCompile("io.github.bonigarcia:webdrivermanager:3.8.1")
+}
+
+WebDriverManager resolves the driver binaries for the browsers Chrome, Firefox, Opera, PhantomJS, Microsoft Edge, Internet Explorer, and Chromium. For that, it provides several drivers managers for these browsers. These drivers managers can be used as follows:
+
+WebDriverManager.chromedriver().setup();
+WebDriverManager.firefoxdriver().setup();
+WebDriverManager.operadriver().setup();
+WebDriverManager.phantomjs().setup();
+WebDriverManager.edgedriver().setup();
+WebDriverManager.iedriver().setup();
+WebDriverManager.chromiumdriver().setup();
