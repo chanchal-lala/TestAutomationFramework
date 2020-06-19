@@ -37,28 +37,32 @@ public class ExtentReportsDemoWithTestNG
 	  WebDriverManager.chromedriver().setup();
 	  driver = new ChromeDriver();
   }
-  
-  public void BeforeTest()
-  {
-	  
-  }
-  
+    
   @Test
   public void test1() throws Exception 
   {
-	  ExtentTest test = extent.createTest("MyFirstTest", "Sample description");
+	  ExtentTest test1 = extent.createTest("MyFirstTest", "Sample description");
 	  
-	  driver.get("https://www.google.com/");
-	  test.pass("Navigated to google.com");
+	  driver.get("https://www.wikipedia.org/");
+	  test1.pass("Navigated to wikipedia.org");
 	  
 	  //log (Status, details)
-      test.log(Status.INFO, "This step shows usage of log(status, details)");
+      test1.log(Status.INFO, "This step shows usage of log(status, details)");
 	  // info(details)
-      test.info("This step shows usage of info(details)");
+      test1.info("This step shows usage of info(details)");
       // log with snapshot
-      test.fail("details", MediaEntityBuilder.createScreenCaptureFromPath("screenshot.png").build());
+      test1.fail("details", MediaEntityBuilder.createScreenCaptureFromPath("screenshot.png").build());
       // test with snapshot
-      test.addScreenCaptureFromPath("screenshot.png");
+      test1.addScreenCaptureFromPath("screenshot.png");
+  }
+  
+  @Test
+  public void test2() throws Exception 
+  {
+	  ExtentTest test2 = extent.createTest("MySecondTest", "Sample description");
+	  driver.get("https://github.com/");
+	  test2.pass("Navigated to github");
+	  System.out.println("Test Passed Successfully");
   }
   
   @AfterSuite

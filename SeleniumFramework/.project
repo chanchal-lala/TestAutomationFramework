@@ -20,4 +20,21 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>example</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>example/FirstSeleniumTest.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/SeleniumFramework/src/test/java/example/FirstSeleniumTest.java</locationURI>
+		</link>
+		<link>
+			<name>example/NewTest.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/SeleniumFramework/src/test/java/example/NewTest.java</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>

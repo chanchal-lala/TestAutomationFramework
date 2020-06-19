@@ -66,7 +66,7 @@ public class FirstSeleniumTest
 	//runTest
 	public static void runTest()
 	{
-		driver.get("https://automationstepbystep.com/");  
+		driver.get("https://mail.google.com/");  
 		driver.close();
 		driver.quit();
 	}
