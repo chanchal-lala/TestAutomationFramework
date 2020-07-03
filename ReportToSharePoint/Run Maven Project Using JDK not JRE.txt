@@ -1,0 +1,3 @@
+Inside Eclipse, Navigate to:
+ 
+Windows > Preferences> Java > Installed JREs > Add JDK path as Standard VM
