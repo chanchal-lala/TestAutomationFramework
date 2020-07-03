@@ -1,0 +1,16 @@
+Best way to achieve by using surefire plugin in your maven project
+
+<plugin>
+ <groupId>org.apache.maven.plugins</groupId>
+ <artifactId>maven-surefire-plugin</artifactId>
+ <version>3.0.0-M1</version>
+  <configuration>
+   <suiteXmlFiles>
+    <suiteXmlFile>testng.xml</suiteXmlFile> *if the testng.xml is in different folder then pom.xml please include the path*
+   </suiteXmlFiles>
+ </configuration>
+</plugin>
+Once you configured the testng.xml create a batch file with below text
+
+cd C:\workspace\projectdir (the folder where pom.xml is available)
+mvn test
