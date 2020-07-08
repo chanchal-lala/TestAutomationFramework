@@ -15,6 +15,7 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
 		<attributes>
+			<attribute name="module" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
@@ -36,5 +37,6 @@
 	<classpathentry kind="lib" path="C:/Users/Chanchal Lala/Desktop/Tools/EclipseProjects/ReportToSharePoint/ReportToSharePoint/lib/selenium-server-standalone-3.141.59.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Chanchal Lala/Desktop/Tools/EclipseProjects/ReportToSharePoint/ReportToSharePoint/lib/sqlite-jdbc-3.8.11.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Chanchal Lala/Desktop/Tools/EclipseProjects/ReportToSharePoint/ReportToSharePoint/lib/testng-7.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chanchal Lala/Desktop/Tools/EclipseProjects/ReportToSharePoint/ReportToSharePoint/lib/aerogear-otp-java-1.0.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
