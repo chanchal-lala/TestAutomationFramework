@@ -31,7 +31,7 @@ public class ReportToSharePoint {
   {
 	    driver.get("https://vodafone.sharepoint.com.eu.cas.ms/sites/Jenkins142/Shared%20Documents/Forms/AllItems.aspx?RootFolder=%2Fsites%2FJenkins142%2FShared%20Documents%2FGeneral%2FJenkinsSanity%2DTestResults%2FE4%5FSanity%2FE4%5F112%5FTestResult&FolderCTID=0x012000FAED0D35A2E85E428B6B268E3F8A2E06");
 		WebElement Email_Username = driver.findElement(By.xpath("//input[@type='email']"));
-		Email_Username.sendKeys("chanchal.lala@vodafone.com");
+		Email_Username.sendKeys("abhishek.chintamani@vodafone.com");
 		Thread.sleep(5000);
 		WebElement next = driver.findElement(By.xpath("//input[@type='submit']"));
 		next.isDisplayed();
@@ -40,7 +40,7 @@ public class ReportToSharePoint {
 		Thread.sleep(20000);
 		WebElement Username = driver.findElement(By.xpath("//input[@id='userNameInput']"));
 		Username.clear();
-		Username.sendKeys("chanchal.lala@vodafone.com");
+		Username.sendKeys("abhishek.chintamani@vodafone.com");
 		Thread.sleep(5000);
 		WebElement passkey = driver.findElement(By.xpath("//input[@id='passwordInput']"));
 		passkey.clear();
